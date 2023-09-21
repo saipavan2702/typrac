@@ -1,0 +1,35 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 200px 5px 200px;
+}
+.cards {
+  display: grid;
+  width: 500px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.cards > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  border: 1px solid white;
+  height: 100px;
+  background: rgb(186, 20, 20);
+  border-radius: 12px;
+  position: relative;
+  width: 250px;
+}
+/* .cards > li:hover {
+  background-color: #eee;
+} */
+.cards > li > button {
+  position: absolute;
+  font-size: 12px;
+  top: 3px;
+  right: 5px;
+  border: none;
+  border-radius: 5px;
+}
